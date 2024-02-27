@@ -1,5 +1,7 @@
 # {{ ansible_managed }}
-http_port {{ squid_port }}
+{% for port in squid_listen_ports %}
+http_port {{ port }}
+{% endfor %}
 
 include /etc/squid/conf.d/*.conf
 

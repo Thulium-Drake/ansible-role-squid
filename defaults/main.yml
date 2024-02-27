@@ -1,6 +1,7 @@
 ---
-# Port that Squid listens on
-squid_port: 3128
+# Port(s) that Squid listens on
+squid_listen_ports:
+  - '3128'
 
 # ACLs for allowing or blocking destination domains
 squid_allowed_domains: []
